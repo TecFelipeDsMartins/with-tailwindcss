@@ -3,6 +3,9 @@ import React, { Fragment } from 'react'
 import SvgIcon from './SvgIcon'
 
 const CardPricing = (props) => {
+
+  const whatsLink = "https://api.whatsapp.com/send?phone=555131030777&text="
+  
     return (
         <Fragment>
              <div className={props.style}>
@@ -23,9 +26,9 @@ const CardPricing = (props) => {
                   </div>
                   <h2 className="text-3xl font-medium uppercase p-3 pb-0 text-center tracking-wide text-green-500 ">R${props.valor}</h2>
                   <div className="block flex items-center  uppercase">
-                    <button className="mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl bg-green-400 hover:bg-green-500">
-                        <a href="https://api.whatsapp.com/send?phone=555131030777&text=Visitei%20sua%20landing%20page%20e%20gostaria%20de%20comprar%20%20etiquetas" target="_blank">Comprar já!</a>
-                    </button>
+                    <a href={`https://api.whatsapp.com/send?phone=555131030777&text=Visitei%20sua%20landing%20page%20e%20gostaria%20de%20comprar%20${props.unidade}%20etiquetas%20de%20Bopp%20,%20por%20${props.valor}.`} className="text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl bg-green-400 hover:bg-green-500" target="_blank">
+                       <button className="">Comprar já!</button>
+                    </a>
                   </div>
                 </div>
               </div> 
