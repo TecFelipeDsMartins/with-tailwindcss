@@ -68,10 +68,13 @@ const index = () => {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SCG4L5"
         style={{display:"none;visibility:hidden"}}></iframe></noscript>
         {/* End Google Tag Manager (noscript)  */}
-        <div className="container max-w-full" style={{ backgroundImage: "url('../img/granola.jpg')", backgroundSize:"900px", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundAttachment:"fixed"}}>
+
+
+
+        <div className="container max-w-full bg-cover bg-no-repeat bg-center bg-fixed bg-gradient-to-r from-red-900" style={{ backgroundImage: "url('../img/granola.jpg')", backgroundBlendMode:"multiply" }}>
           <section> 
-            <div className="container mx-auto ">
-              <h1 className="text-center text-5xl text-blue-900 font-medium leading-snug tracking-wider font-serif py-0 " style={{fontFamily: "Pacifico, cursive"}}>
+            <div className="">
+              <h1 className="text-center w-100% text-3xl sm:text-5xl text-blue-900 font-medium leading-snug tracking-wider font-serif py-3 shadow-lg bg-white" style={{fontFamily: "Pacifico, cursive"}}>
                 Etiquetas Adesivas
               </h1>
               <p className="text-center  font-medium text-lg text-blue-900 shadow-xl mt-0 px-6 bg-white bg-opacity-70">
@@ -79,17 +82,17 @@ const index = () => {
               </p>
               <div className="flex flex-wrap justify-center justify-around">
               <CardPricing 
-                style={"w-11/12 max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
+                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg"}
                 styleContainer={"text-sm leading-none rounded-t-lg bg-red-500 text-black font-semibold uppercase py-4 text-center tracking-wide"}
                 unidade={"245"} 
                 valor={"86,00"}/>
               <CardPricing 
-                style={"w-11/12 max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
+                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
                 styleContainer={"text-sm leading-none rounded-t-lg bg-yellow-500 text-black font-semibold uppercase py-4 text-center tracking-wide"}
                 unidade={"539"} 
                 valor={"119,00"}/>
               <CardPricing 
-                style={"w-11/12 max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
+                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
                 styleContainer={"text-sm leading-none rounded-t-lg bg-pink-400 text-black font-semibold uppercase py-4 text-center tracking-wide"}
                 unidade={"1029"} 
                 valor={"175,00"}/>  
@@ -97,6 +100,9 @@ const index = () => {
             </div>  
           </section>
         </div>
+        <footer className="flex justify-center items-center w-100% h-16 bg-blue-900">
+            <a className="flex justify-center items-center" href="https://www.ferreiraprintgraf.com.br"><img className="w-32 h-8" src="../img/logobranco.png"/></a>
+        </footer>
       </Fragment>
     )
 }
