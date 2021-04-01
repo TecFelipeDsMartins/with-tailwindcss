@@ -14,6 +14,7 @@ const index = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
+        
         {/*-- Global site tag (gtag.js) - Google Analytics */}
         <script
             async
@@ -28,6 +29,33 @@ const index = () => {
             `}
         }>
         </script>
+        
+        {/*-- Global site tag (gtag.js) - Google Ads: 401203114 */}
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-401203114" >
+        </script>
+
+        {/*In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.*/}
+        <script dangerouslySetInnerHTML={
+            { __html: `
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-401203114/10YZCN-U_PsBEKq_p78B',
+                  'event_callback': callback
+              });
+              return false;
+            }
+            `}
+        }>
+        </script>
+
+
         <title>Etiquetas e rótulos</title>
         </Head>
         <div className="container max-w-full" style={{ backgroundImage: "url('../img/granola.jpg')", backgroundSize:"900px", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundAttachment:"fixed"}}>
