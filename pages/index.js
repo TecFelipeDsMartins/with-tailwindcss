@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head';
 import CardPricing from '../components/CardPricing';
+import { InstaIcon } from '../components/InstaIcon';
 
 const index = () => {
     return (
@@ -87,12 +88,12 @@ const index = () => {
                 unidade={"245"} 
                 valor={"86,00"}/>
               <CardPricing 
-                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
+                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg  "}
                 styleContainer={"text-sm leading-none rounded-t-lg bg-yellow-500 text-black font-semibold uppercase py-4 text-center tracking-wide"}
                 unidade={"539"} 
                 valor={"119,00"}/>
               <CardPricing 
-                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg  "}
+                style={"w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-16 relative z-0 rounded-lg shadow-lg  "}
                 styleContainer={"text-sm leading-none rounded-t-lg bg-pink-400 text-black font-semibold uppercase py-4 text-center tracking-wide"}
                 unidade={"1029"} 
                 valor={"175,00"}/>  
@@ -100,8 +101,11 @@ const index = () => {
             </div>  
           </section>
         </div>
-        <footer className="flex justify-center items-center w-100% h-16 bg-blue-900">
-            <a className="flex justify-center items-center" href="https://www.ferreiraprintgraf.com.br"><img className="w-32 h-8" src="../img/logobranco.png"/></a>
+        <footer className="flex justify-center items-center w-full h-12 bg-blue-900 fixed sm:relative bottom-0"> 
+            <a className="flex justify-center items-center" href="https://www.instagram.com/ferreiraprintgraf">
+              <InstaIcon />
+              <img className="w-32 h-8" src="../img/logobranco.png"/>
+            </a>
         </footer>
       </Fragment>
     )
