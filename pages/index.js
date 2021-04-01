@@ -14,6 +14,20 @@ const index = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
+        {/*-- Global site tag (gtag.js) - Google Analytics */}
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-4DVCQLXDZR" >
+        </script>
+        <script dangerouslySetInnerHTML={
+            { __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){window.dataLayer.push(arguments)}
+                gtag("js", new Date());
+                gtag("config", "G-4DVCQLXDZR");
+            `}
+        }>
+        </script>
         <title>Etiquetas e rótulos</title>
         </Head>
         <div className="container max-w-full" style={{ backgroundImage: "url('../img/granola.jpg')", backgroundSize:"900px", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundAttachment:"fixed"}}>
