@@ -4,7 +4,14 @@ import SvgIcon from './SvgIcon'
 import ReactGa from 'react-ga'
 
 const CardPricing = (props) => {
-    
+   
+  useEffect(()=>{
+    ReactGa.initialize('G-4DVCQLXDZR')
+    ReactGa.pageview('/')
+},[])
+
+
+
   const ClickHandler = () => {
     ReactGa.event({
       category: 'Button',

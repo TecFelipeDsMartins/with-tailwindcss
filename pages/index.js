@@ -4,6 +4,7 @@ import CardPricing from '../components/CardPricing';
 import { InstaIcon } from '../components/InstaIcon';
 import  ReactGa from 'react-ga';
 
+
 const index = () => {
 
    useEffect(()=>{
