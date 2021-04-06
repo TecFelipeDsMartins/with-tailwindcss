@@ -7,10 +7,7 @@ import  ReactGa from 'react-ga';
 
 const index = () => {
 
-   useEffect(()=>{
-       ReactGa.initialize('G-4DVCQLXDZR')
-       ReactGA.pageview(window.location.pathname + window.location.search);
-   },[])
+
 
     return (
       <Fragment>
@@ -24,7 +21,40 @@ const index = () => {
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
         
-       
+       {/*-- Global site tag (gtag.js) - Google Analytics */}
+       <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-4DVCQLXDZR" >
+        </script>
+        <script dangerouslySetInnerHTML={
+            { __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){window.dataLayer.push(arguments)}
+                gtag("js", new Date());
+                gtag("config", "G-4DVCQLXDZR");
+                gtag( 'config', 'AW-401203114');
+            `}
+         }>
+         <script dangerouslySetInnerHTML={
+            { __html: `
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-401203114/18s9CKig1P8BEKq_p78B',
+                  'event_callback': callback
+              });
+              return false;
+            }
+            `}
+         }></script>
+        </script>
+        
+      
+
         
       
 
