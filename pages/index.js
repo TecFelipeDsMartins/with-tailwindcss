@@ -34,7 +34,7 @@ const index = () => {
                 gtag("config", "G-4DVCQLXDZR");
                 gtag( 'config', 'AW-401203114');
             `}
-         }>
+         }></script>
          <script dangerouslySetInnerHTML={
             { __html: `
             function gtag_report_conversion(url) {
@@ -51,7 +51,7 @@ const index = () => {
             }
             `}
          }></script>
-        </script>
+        
         
       
 
