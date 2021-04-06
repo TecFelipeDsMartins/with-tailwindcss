@@ -7,10 +7,7 @@ const CardPricing = (props) => {
   
   
 
-  useEffect(()=>{
-    ReactGa.initialize('UA-4DVCQLXDZR')
-    ReactGa.pageview('/')
-},[])
+
 
 
 
@@ -19,6 +16,7 @@ const CardPricing = (props) => {
       category: 'Button',
       action: 'clicou no botão de comprar'
     })
+    console.log("clicou")
   }
   
     return (
