@@ -29,7 +29,23 @@ const index = () => {
                 gtag("config", "G-4DVCQLXDZR");
                 gtag( 'config', 'AW-401203114');
             `}
-        }>
+         }>
+         <script dangerouslySetInnerHTML={
+            { __html: `
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-401203114/18s9CKig1P8BEKq_p78B',
+                  'event_callback': callback
+              });
+              return false;
+            }
+            `}
+         }></script>
         </script>
         
       
