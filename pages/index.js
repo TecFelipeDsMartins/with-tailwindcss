@@ -8,7 +8,7 @@ import  ReactGa from 'react-ga';
 const index = () => {
 
    useEffect(()=>{
-       ReactGa.initialize('G-4DVCQLXDZR')
+       ReactGa.initialize('UA-4DVCQLXDZR')
        ReactGa.pageview('/')
    },[])
 

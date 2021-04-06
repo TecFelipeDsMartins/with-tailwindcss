@@ -4,9 +4,11 @@ import SvgIcon from './SvgIcon'
 import ReactGa from 'react-ga'
 
 const CardPricing = (props) => {
-   
+  
+  
+
   useEffect(()=>{
-    ReactGa.initialize('G-4DVCQLXDZR')
+    ReactGa.initialize('UA-4DVCQLXDZR')
     ReactGa.pageview('/')
 },[])
 
