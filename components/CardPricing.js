@@ -1,9 +1,16 @@
 
 import React, { Fragment } from 'react'
 import SvgIcon from './SvgIcon'
+import ReactGa from 'react-ga'
 
 const CardPricing = (props) => {
-
+    
+  const ClickHandler = () => {
+    ReactGa.event({
+      category: 'Button',
+      action: 'clicou no botão de comprar'
+    })
+  }
   
     return (
         <Fragment>
@@ -31,7 +38,7 @@ const CardPricing = (props) => {
                         ${props.valor}.`} 
                         target="_blank">
                         
-                        <button className="">Comprar já!</button>
+                        <button className="" onClick={ClickHandler}>Comprar já!</button>
                     </a>
                   </div>
                 </div>
