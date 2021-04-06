@@ -27,40 +27,12 @@ const index = () => {
                 function gtag(){window.dataLayer.push(arguments)}
                 gtag("js", new Date());
                 gtag("config", "G-4DVCQLXDZR");
+                gtag( 'config', 'AW-401203114');
             `}
         }>
         </script>
         
-        {/*-- Global site tag (gtag.js) - Google Ads: 401203114 */}
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=AW-401203114" >
-        </script>
-
-        {/*In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.*/}
-        <script dangerouslySetInnerHTML={
-            { __html: `
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                  'send_to': 'AW-401203114/10YZCN-U_PsBEKq_p78B',
-                  'event_callback': callback
-              });
-              return false;
-            }
-
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5SCG4L5');
-            `}
-        }>
-        </script>
+      
 
 
         <title>Etiquetas e rótulos</title>
