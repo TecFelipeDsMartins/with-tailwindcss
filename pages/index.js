@@ -33,6 +33,7 @@ const index = () => {
           href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
           rel="stylesheet"
         ></link>
+        <title>Etiquetas e rótulos Adesivos</title>
 
         {/*-- Global site tag (gtag.js) - Google Analytics */}
         <script
@@ -46,30 +47,25 @@ const index = () => {
                 function gtag(){window.dataLayer.push(arguments)}
                 gtag("js", new Date());
                 gtag("config", "G-4DVCQLXDZR");
-                gtag( 'config', 'AW-401203114');
-            `
+                gtag( 'config', 'AW-401203114');`
           }}
         ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            function gtag_report_conversion(url) {
-              var callback = function () {
+                function gtag_report_conversion(url) {
+                var callback = function () {
                 if (typeof(url) != 'undefined') {
                   window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                  'send_to': 'AW-401203114/18s9CKig1P8BEKq_p78B',
-                  'event_callback': callback
-              });
-              return false;
-            }
-            `
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-401203114/18s9CKig1P8BEKq_p78B',
+                    'event_callback': callback
+                });
+                return false;}`
           }}
         ></script>
-
-        <title>Etiquetas e rótulos Adesivos</title>
       </Head>
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -89,48 +85,53 @@ const index = () => {
         }}
       >
         <section>
-          <div className="">
-            <h1
-              className="text-center w-100% text-3xl sm:text-5xl text-blue-900 font-medium leading-snug tracking-wider font-serif py-3 shadow-lg bg-white"
-              style={{ fontFamily: "Pacifico, cursive" }}
-            >
-              Etiquetas Adesivas
-            </h1>
-            <p className="text-center  font-medium text-lg text-blue-900 shadow-xl mt-0 px-6 bg-white bg-opacity-70">
-              4cm de diâmetro (redondinha) em Bopp.
-            </p>
-            <div className="flex flex-wrap justify-center justify-around p-5">
-              <CardPricing
-                style={
-                  "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg"
-                }
-                styleContainer={
-                  "text-sm leading-none rounded-t-lg bg-red-500 text-black font-semibold uppercase py-4 text-center tracking-wide"
-                }
-                unidade={"245"}
-                valor={"86,00"}
-              />
-              <CardPricing
-                style={
-                  "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg  "
-                }
-                styleContainer={
-                  "text-sm leading-none rounded-t-lg bg-yellow-500 text-black font-semibold uppercase py-4 text-center tracking-wide"
-                }
-                unidade={"539"}
-                valor={"119,00"}
-              />
-              <CardPricing
-                style={
-                  "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-16 relative z-0 rounded-lg shadow-lg  "
-                }
-                styleContainer={
-                  "text-sm leading-none rounded-t-lg bg-pink-400 text-black font-semibold uppercase py-4 text-center tracking-wide"
-                }
-                unidade={"1029"}
-                valor={"175,00"}
-              />
+          <div className="md:flex justify-center justify-items-center ">
+            <div className="md:ml-10">
+              <h1
+                className="text-center w-100% text-3xl sm:text-5xl text-blue-900 font-medium leading-snug tracking-wider font-serif py-3 shadow-lg bg-white"
+                style={{ fontFamily: "Pacifico, cursive" }}
+              >
+                Etiquetas Adesivas
+              </h1>
+              <p className="text-center  font-medium text-lg text-blue-900 shadow-xl mt-0 px-6 bg-white bg-opacity-70">
+                4cm de diâmetro (redondinha) em Bopp.
+              </p>
             </div>
+            <div className="w-100% md:w-40 md:h-12 h-10 p-2 bg-blue-900 rounded-md  mx-0 flex justify-center">
+              <img className="md:w-32 w-32 " src="../img/logobranco.png" />
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center justify-around p-5">
+            <CardPricing
+              style={
+                "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg"
+              }
+              styleContainer={
+                "text-sm leading-none rounded-t-lg bg-red-500 text-black font-semibold uppercase py-4 text-center tracking-wide"
+              }
+              unidade={"245"}
+              valor={"86,00"}
+            />
+            <CardPricing
+              style={
+                "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg  "
+              }
+              styleContainer={
+                "text-sm leading-none rounded-t-lg bg-yellow-500 text-black font-semibold uppercase py-4 text-center tracking-wide"
+              }
+              unidade={"539"}
+              valor={"119,00"}
+            />
+            <CardPricing
+              style={
+                "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-16 relative z-0 rounded-lg shadow-lg  "
+              }
+              styleContainer={
+                "text-sm leading-none rounded-t-lg bg-pink-400 text-black font-semibold uppercase py-4 text-center tracking-wide"
+              }
+              unidade={"1029"}
+              valor={"175,00"}
+            />
           </div>
         </section>
       </div>
