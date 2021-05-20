@@ -25,7 +25,7 @@ const index = () => {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Etiquetas e rotúlos personalizados com a melhor qualidade da impressão digital."
+          content="Etiquetas e rótulos personalizados com a melhor qualidade da impressão digital."
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -69,7 +69,7 @@ const index = () => {
           }}
         ></script>
 
-        <title>Etiquetas e rótulos</title>
+        <title>Etiquetas e rótulos Adesivos</title>
       </Head>
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -99,7 +99,7 @@ const index = () => {
             <p className="text-center  font-medium text-lg text-blue-900 shadow-xl mt-0 px-6 bg-white bg-opacity-70">
               4cm de diâmetro (redondinha) em Bopp.
             </p>
-            <div className="flex flex-wrap justify-center justify-around">
+            <div className="flex flex-wrap justify-center justify-around p-5">
               <CardPricing
                 style={
                   "w-full max-w-md sm:w-3/5 lg:w-1/4 sm:my-5 my-6 relative z-0 rounded-lg shadow-lg"
