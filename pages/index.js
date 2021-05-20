@@ -1,11 +1,23 @@
-import React, { Fragment, useEffect } from "react";
 import Head from "next/head";
 import CardPricing from "../components/CardPricing";
 import { InstaIcon } from "../components/InstaIcon";
 
 const index = () => {
   return (
-    <Fragment>
+    <>
+      <style global jsx>{`
+        html,
+        body,
+        body > div:first-child,
+        div#__next,
+        div#__next > div {
+        }
+        @media (min-width: 600px) {
+          div#__next > div {
+            height: 100vh;
+          }
+        }
+      `}</style>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,6 +74,7 @@ const index = () => {
       {/* Google Tag Manager (noscript) */}
       <noscript>
         <iframe
+          title="google manager"
           src="https://www.googletagmanager.com/ns.html?id=GTM-5SCG4L5"
           style={{ display: "none;visibility:hidden" }}
         ></iframe>
@@ -121,7 +134,7 @@ const index = () => {
           </div>
         </section>
       </div>
-      <footer className="flex justify-center items-center w-full h-12 bg-blue-900 fixed sm:relative bottom-0">
+      <footer className="flex justify-center items-center h-12 bg-blue-900 ">
         <a
           className="flex justify-center items-center"
           href="https://www.instagram.com/ferreiraprintgraf"
@@ -130,12 +143,8 @@ const index = () => {
           <img className="w-32 h-8" src="../img/logobranco.png" />
         </a>
       </footer>
-    </Fragment>
+    </>
   );
 };
 
 export default index;
-
-{
-  /*w-11/12 max-w-md sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg*/
-}
